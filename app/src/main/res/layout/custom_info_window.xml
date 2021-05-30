@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_dialog_alert" />
+
+            <TextView
+                android:id="@+id/title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_id"
+                android:text="Hello"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/magnitude_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_id"
+                android:layout_toRightOf="@+id/image_id"
+                android:text="Magnitude" />
+
+            <Button
+                android:id="@+id/button_id"
+                android:layout_width="99dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@id/magnitude_id"
+                android:background="@android:color/transparent"
+                android:text="more info..."
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
